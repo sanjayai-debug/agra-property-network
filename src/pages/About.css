@@ -1,0 +1,129 @@
+.about-page {
+  padding-bottom: 60px;
+}
+
+.about-hero {
+  background: var(--gradient);
+  color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.1rem;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.about-section.reverse .about-content {
+  order: 2;
+}
+
+.about-section.reverse .about-image {
+  order: 1;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--royal);
+}
+
+.about-content p {
+  color: var(--grey-600);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-features {
+  list-style: none;
+}
+
+.about-features li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--grey-200);
+  color: var(--grey-600);
+  line-height: 1.6;
+}
+
+.about-features li:last-child {
+  border-bottom: none;
+}
+
+.about-features strong {
+  color: var(--grey-800);
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px 0;
+  border-top: 1px solid var(--grey-200);
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--royal);
+  font-family: var(--font-heading);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--grey-500);
+}
+
+.cta-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  color: var(--grey-500);
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+  .about-section.reverse .about-content {
+    order: 1;
+  }
+  .about-section.reverse .about-image {
+    order: 2;
+  }
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
